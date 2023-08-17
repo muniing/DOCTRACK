@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DocTrack"
+        tools:targetApi="31">
+        <activity
+            android:name=".forpatient.PatientRecord"
+            android:exported="false" />
+        <activity
+            android:name=".forhealthprofessional.Report"
+            android:exported="false" />
+        <activity
+            android:name=".forhealthprofessional.PatientRecords"
+            android:exported="false" />
+        <activity
+            android:name=".forpatient.PatientMedication"
+            android:exported="true"
+            android:label="@string/title_activity_patient_medication"
+            android:theme="@style/Theme.DocTrack"/>
+
+        <activity
+            android:name=".Device"
+            android:exported="false"
+            android:label="@string/title_activity_device"
+            android:theme="@style/Theme.DocTrack" />
+        <activity
+            android:name=".forpatient.PatientAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".forhealthprofessional.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forpatient.PatientDashboard"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".forhealthprofessional.Dashboard"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forhealthprofessional.Appointments"
+            android:exported="false" />
+    </application>
+
+</manifest>
