@@ -7,8 +7,8 @@
     android:background="@drawable/background"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="20dp"
-    tools:context=".LoginActivity">
+    android:padding="15dp"
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,27 +16,6 @@
         android:layout_height="214dp"
         app:srcCompat="@drawable/logo" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/loginbg">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login as: "
-            android:textSize="18dp"
-            android:paddingLeft="20dp"
-            android:background="@color/secondaryColor"/>
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:entries="@array/Login_as"
-            android:padding="10dp"
-            android:spinnerMode="dropdown" />
-    </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -66,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
-            android:inputType="textPassword"
+            android:password="true"
             tools:layout_editor_absoluteX="-4dp"
             tools:layout_editor_absoluteY="359dp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -78,21 +57,21 @@
         android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginButton"
+        android:id="@+id/registerButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/btn_bg"
-        android:text="@string/login"
+        android:text="@string/register"
         android:textColor="#000000" />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/login"
         android:textSize="15sp"
         android:gravity="center"
         android:layout_marginTop="30dp"
         android:textColor="@color/secondaryColor"
-        android:text="Don't have an account? SIGN UP"
+        android:text="Already have an account? LOG IN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

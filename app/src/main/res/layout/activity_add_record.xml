@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forhealthprofessional.adding_records.AddRecord"
+    android:background="@drawable/second_background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="145dp"
+        android:text="Add Patient"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="356dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Age"
+        android:inputType="text"
+        android:background="@drawable/btn_bg"/>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:hint="Gender"
+        android:padding="10dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="26dp"
+        android:layout_toEndOf="@+id/age"
+        android:background="@drawable/btn_bg"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/age"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="26dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/dateofbirth"
+        android:layout_width="356dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/address"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:hint="Date of Birth"
+        android:background="@drawable/btn_bg"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Add"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="642dp"
+        android:layout_marginEnd="37dp" />
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/secondaryColor">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patientID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient ID:"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/patientIDID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient ID"
+            android:textColor="@color/black"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/patientID"/>
+        <TextView
+            android:id="@+id/patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Name:"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/patientNameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/patientName"
+            android:text="Patient Name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Purpose:"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/purposePurp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/purpose"
+            android:text="Purpose"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/white_stroke">
+
+            <ImageView
+                android:id="@+id/date"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/date"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:text="August 20, 2023"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/white_stroke">
+
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/time"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:text="10:00 AM"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="95dp"
+            android:paddingRight="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="130dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_darkbg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="95dp"
+            android:paddingRight="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reschedule"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="250dp"
+                android:text="Reschedule"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_darkbg"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

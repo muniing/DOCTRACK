@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "820749390557",
+    "firebase_url": "https://doctrack-c248f-default-rtdb.firebaseio.com",
+    "project_id": "doctrack-c248f",
+    "storage_bucket": "doctrack-c248f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820749390557:android:934dd39ce2400e6776c134",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820749390557-t4bmssq6icij13nbca7q44ftkhn71344.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-_AtUKF_NYbKEn0e6H9GgjFUCn_JXO1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820749390557-t4bmssq6icij13nbca7q44ftkhn71344.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

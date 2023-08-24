@@ -6,10 +6,12 @@
     tools:context=".forpatient.fragments.PatientPending">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Pending Appointments" />
+        android:layout_marginTop="47dp"
+        android:background="@drawable/btn_bg"/>
 
 </RelativeLayout>

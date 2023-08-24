@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -21,6 +22,15 @@
         android:theme="@style/Theme.DocTrack"
         tools:targetApi="31">
         <activity
+            android:name=".forhealthprofessional.adding_records.AddRecord"
+            android:exported="false" />
+        <activity
+            android:name=".forhealthprofessional.adding_records.Add_record"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".forpatient.PatientRecord"
             android:exported="false" />
         <activity
@@ -33,8 +43,7 @@
             android:name=".forpatient.PatientMedication"
             android:exported="true"
             android:label="@string/title_activity_patient_medication"
-            android:theme="@style/Theme.DocTrack"/>
-
+            android:theme="@style/Theme.DocTrack" />
         <activity
             android:name=".Device"
             android:exported="false"
@@ -44,21 +53,20 @@
             android:name=".forpatient.PatientAppointments"
             android:exported="false" />
         <activity
-            android:name=".forhealthprofessional.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".forpatient.PatientDashboard"
+            android:name=".LoginActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".forpatient.PatientDashboard"
+            android:exported="false" />
+        <activity
             android:name=".forhealthprofessional.Dashboard"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
