@@ -97,6 +97,48 @@
         android:hint="Date of Birth"
         android:background="@drawable/btn_bg"/>
 
+    <LinearLayout
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/btn_bg"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnmedicalhistory"
+            android:layout_width="346dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/btn_darkbg"
+            android:text="Medical History"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnmedication"
+            android:layout_width="346dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/btn_darkbg"
+            android:text="Medication"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnvitalsigns"
+            android:layout_width="346dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/btn_darkbg"
+            android:text="Vital Signs"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add"
         android:layout_width="wrap_content"

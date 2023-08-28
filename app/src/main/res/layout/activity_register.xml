@@ -16,6 +16,35 @@
         android:layout_height="214dp"
         app:srcCompat="@drawable/logo" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/secondaryColor"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hpname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/secondaryColor"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hpposition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -29,7 +58,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email" />
+            android:hint="Email/Username" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -49,6 +78,25 @@
             tools:layout_editor_absoluteX="-4dp"
             tools:layout_editor_absoluteY="359dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/secondaryColor"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:password="true"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="359dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <ProgressBar
         android:id="@+id/progressBar"

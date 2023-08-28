@@ -59,6 +59,10 @@ public class LoginActivity extends AppCompatActivity {
 
         ArrayAdapter <CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Login_as, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        String item = spinner.getSelectedItem().toString();
+        if(item.equals("Patient")){
+            textView.setVisibility(View.GONE);
+        }
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,10 +101,13 @@ public class LoginActivity extends AppCompatActivity {
                                     startActivity(new Intent(LoginActivity.this, Dashboard.class));
                                     finish();
                                 }
-                                else if (item.equals("Patient") && task.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(LoginActivity.this, PatientDashboard.class));
-                                    finish();
+                                if (item.equals("Patient")){
+                                    findViewById(R.id.register).setVisibility(View.INVISIBLE);
+                                    if(task.isSuccessful()) {
+                                        Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(LoginActivity.this, PatientDashboard.class));
+                                        finish();
+                                }
                                 }else {
                                     Toast.makeText(LoginActivity.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();

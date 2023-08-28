@@ -66,7 +66,7 @@ PatientRecords extends AppCompatActivity {
         showData();
     }
 
-    private void showData(){
+    public void showData(){
         db.collection("Patients").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
